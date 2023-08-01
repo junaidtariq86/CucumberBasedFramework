@@ -20,14 +20,11 @@ public class SD_Home_Page extends Base {
     @FindBy(xpath = "//*[@id='react-burger-menu-btn']")
     public WebElement menu_btn;
 
-
     @FindBy(xpath = "//*[@id='logout_sidebar_link']")
     public WebElement logout_btn;
 
     @FindBy(xpath = "//*[@class='shopping_cart_link']")
     public WebElement cart_btn;
-
-
 
 
 

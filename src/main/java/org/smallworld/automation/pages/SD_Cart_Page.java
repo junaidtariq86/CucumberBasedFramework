@@ -13,7 +13,6 @@ public class SD_Cart_Page extends Base {
     public SD_Cart_Page(WebDriver driver) {PageFactory.initElements(driver, this );}
 
 
-
     public void removeProductsFromCart() throws InterruptedException {
     List<WebElement> removeList = driver.findElements(By.xpath("//*[contains(@class,'cart_list')]//*[contains(text(),'Remove')]"));
 

@@ -17,7 +17,6 @@ public class SD_Product_Description_Page extends Base {
     @FindBy(xpath = "//*[@class='shopping_cart_badge']")
     public WebElement cart_count;
 
-
     public void addToCartButton(String data){
         WebElement element = driver.findElement(By.xpath("//*[contains(text(),'"+data+"')]"));
         element.click();
@@ -32,6 +31,5 @@ public class SD_Product_Description_Page extends Base {
         }
 
     }
-
 
 }

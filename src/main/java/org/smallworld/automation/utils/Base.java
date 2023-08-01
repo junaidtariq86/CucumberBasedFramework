@@ -16,20 +16,15 @@ public class Base {
 
     public static WebDriver driver;
 
-    public ExtentReports extent;
-
-    public static ExtentTest scenarioDef;
-    public static ExtentTest features;
-    public static String reportLocation = "src/";
 
 
     public static WebDriver getDriver() throws IOException {
 
 
-        String WebBrowser = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "Browser").get("Value").toString();
-        String Proxy = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "Proxy").get("Value").toString();
+        String WebBrowser = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "Browser").get("Value");
+        String Proxy = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "Proxy").get("Value");
         String main_drive = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "drive").get("Value");
-        String drive_location = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "folder_Location").get("Value").toString();
+        String drive_location = ExcelDriven_XLSX.readExcelData("Testdata", "Basic", "folder_Location").get("Value");
         System.out.println(main_drive + File.separator + drive_location);
         System.out.println(Proxy);
         System.out.println(WebBrowser);

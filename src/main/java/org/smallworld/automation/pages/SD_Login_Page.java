@@ -16,13 +16,11 @@ public class SD_Login_Page extends Base {
     @FindBy(xpath = "//*[@id='user-name']")
     public WebElement U_Name;
 
-
     @FindBy(xpath = "//*[@id='password']")
     public WebElement U_Password;
 
     @FindBy(xpath = "//*[@id='login-button']")
     public WebElement Login_Button;
-
 
     @FindBy(xpath = "//*[@class='error-message-container error']")
     public WebElement error_message;
@@ -32,7 +30,6 @@ public class SD_Login_Page extends Base {
         Base.driver.get(Url);
     }
     public void Enter_Uname_Password(String uname,String Password) throws InterruptedException {
-
         System.out.println("User on Login Page");
         U_Name.sendKeys(uname);
         U_Password.sendKeys(Password);
@@ -46,7 +43,6 @@ public class SD_Login_Page extends Base {
         String locked_user_error = error_message.getText();
         return locked_user_error;
     }
-
 
     public void clearUserNameField(){
         U_Name.clear();

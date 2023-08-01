@@ -13,7 +13,7 @@ public class folderOptions {
 
         File dir =new File(SOURCE_FOLDER);
 
-        if(dir.isDirectory() == false) {
+        if(!dir.isDirectory()) {
             System.out.println("Not a directory. Do nothing");
             return;
         }
@@ -23,8 +23,6 @@ public class folderOptions {
             file.delete();
         }
     }
-
-
     public void deleteHtmlReport(){
         File report = new File(HtmlReport);
         report.delete();

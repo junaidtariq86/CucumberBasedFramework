@@ -12,7 +12,6 @@
     <dependencies>
 
         <!-- Selenium WebDriver -->
-
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -21,14 +20,12 @@
         </dependency>
 
         <!-- Cucumber Dependencies -->
-
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.13.0</version>
         </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
@@ -38,16 +35,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Cucumber Extent Report Plugin -->
 
-
-
-        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.0.9</version>
-        </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
@@ -108,22 +96,6 @@
             <artifactId>log4j-core</artifactId>
             <version>2.19.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.vimalselvam</groupId>
-            <artifactId>cucumber-extentsreport</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-
-
-        <!--
-                &lt;!&ndash; https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter &ndash;&gt;
-                <dependency>
-                    <groupId>com.aventstack</groupId>
-                    <artifactId>extentreports-cucumber4-adapter</artifactId>
-                    <version>1.2.1</version>
-                </dependency>
-
-        -->
 
 
 
